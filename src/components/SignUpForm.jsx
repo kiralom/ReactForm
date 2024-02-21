@@ -40,6 +40,9 @@ export default function SignUpForm(props) {
           Username:
           <input
             type="text"
+            required
+            minlength="8"
+            maxlength="20"
             value={username}
             onChange={(e) => {
               setUsername(e.target.value);
@@ -51,6 +54,9 @@ export default function SignUpForm(props) {
           Password:
           <input
             type="text"
+            required
+            minlength="8"
+            maxlength="20"
             value={password}
             onChange={(e) => {
               setPassword(e.target.value);
